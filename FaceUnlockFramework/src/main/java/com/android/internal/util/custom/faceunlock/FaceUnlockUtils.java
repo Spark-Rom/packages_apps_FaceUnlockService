@@ -25,13 +25,13 @@ public class FaceUnlockUtils {
     }
 
     public static Intent getServiceIntent() {
-        Intent intent = new Intent("com.crdroid.faceunlock.BIND");
+        Intent intent = new Intent("com.spark.faceunlock.BIND");
         intent.setComponent(ComponentName.unflattenFromString(
-                "com.crdroid.faceunlock/com.crdroid.faceunlock.service.FaceAuthService"));
+                "com.spark.faceunlock/com.spark.faceunlock.service.FaceAuthService"));
         return intent;
     }
 
     public static String getServicePackageName() {
-        return "com.crdroid.faceunlock";
+        return "com.spark.faceunlock";
     }
 }
